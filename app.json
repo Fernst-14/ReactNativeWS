@@ -1,5 +1,6 @@
 {
   "expo": {
+    "platforms": ["ios", "android", "web"],
     "name": "submit",
     "slug": "submit",
     "version": "1.0.0",
@@ -13,7 +14,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fernst.submit",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,6 +28,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5fe7e88d-068e-469a-bbce-c51c001209b1"
+      }
     }
   }
 }
